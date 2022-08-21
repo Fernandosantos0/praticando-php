@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculadora Simplex</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/x-icon" sizes="512x512" href="img/favicon.ico">
+		<!-- css -->
+		<link rel="stylesheet" href="css/folhaEstilo.css">
+		<!-- javascript -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="corpo">
+			<header id="cabecalho-topo">
+				<h1>Calculadora Simples</h1>
+			</header>
+			<main>
+				<form action="calcular.php" method="GET" accept-charset="utf-8" class="formulario">
+					<fieldset>
+						<legend>Calcular</legend>
+						<div>
+							<label for="campoNum1">1° número:</label>
+							<input type="number" name="num1" id="campoNum1" placeholder="N°" required>
+						</div>
+						<div>
+							<label for="campoSlc">Operador</label>
+							<select name="campoSelecao" id="campoSlc" required>
+								<option value="" disabled selected>Seleciona</option>
+								<option value="soma">+ Soma</option>
+								<option value="subtracao">- Subtração</option>
+								<option value="multiplicacao">x Multiplicação</option>
+								<option value="divisao">/ Divisão</option>
+								<option value="potencia">n° Pontência</option>
+								<option value="info">Informação sobre o php</option>
+							</select>
+						</div>
+						<div>
+							<label for="campoNum2">2° Número:</label>
+							<input type="number" name="num2" id="campoNum2" placeholder="N°" required>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Botões de controle</legend>
+						<div id="btn-controle">
+							<button type="submit">Calcular</button>
+							<button type="button" id="btn-limpar">Limpar</button>
+						</div>
+					</fieldset>
+				</form>
+			</main>
+
+			<footer id="rodape">
+				<p>Desenvolvido por <a href="https://github.com/Fernandosantos0" rel="external" target="_blank" hreflang="en">Fernando Santos</a></a> <br>
+				copyright &copy; <time id="ano"></time></p>
+			</footer>
+		</div>
+		
+	</body>
+</html>

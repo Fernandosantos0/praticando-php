@@ -1,0 +1,146 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6em;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: green;
+	-webkit-text-decoration-color: green;
+	        text-decoration-color: green;
+}
+
+div#corpo {
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+header#cabecalho-topo{
+	margin-bottom: 1.0em;
+}
+
+header#cabecalho-topo h1 {
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form.formulario {
+    text-align: center;
+}
+
+form.formulario fieldset:nth-of-type(1) {
+	margin-bottom: .5em;
+}
+
+form.formulario fieldset {
+    max-width: 50%;
+    margin-inline: auto;
+    padding: .5em;
+}
+
+form.formulario fieldset legend {
+	font-size: 1.3em;
+}
+
+form.formulario fieldset div {
+    margin-bottom: .6em;
+}
+
+div#btn-controle {
+    margin: 0em;
+}
+
+main#resultado {
+	text-align: center;
+}
+
+div#btn-controle button:nth-of-type(1) {
+    margin-right: 0.5em;
+}
+
+div#btn-controle button {
+	padding: 0.5em 0.9em;
+	cursor: pointer;
+}
+
+#btn-voltar {
+	margin-top: 1.6em;
+}
+
+#btn-voltar,
+button {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	background: #0E435C;
+	padding: 0.5em 1.0em;
+	border: none;
+	outline: none;
+	border-radius: 0.5em;
+	-webkit-transition: background 2.2s, color 2.2s;
+	-o-transition: background 2.2s, color 2.2s;
+	transition: background 2.2s, color 2.2s;
+}
+
+#btn-voltar:hover,
+button:hover {
+	background-color: #0d3547;
+	color: rgb(47, 116, 47);
+}
+
+label {
+	font-size: 1.3em;
+}
+
+input,
+select {
+	padding-top: .3em;
+	padding-bottom: .3em;
+	padding-left: .5em;
+	border-radius: .5em;
+	border: 0.1em solid rgb(172, 166, 166);
+}
+
+select {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	cursor: pointer;
+	background: url(../img/arrow.png) no-repeat 95% 50%;
+	width: 13.1em;
+}
+
+input:focus,
+select:focus,
+button:focus {
+	outline: none;
+}
+
+footer#rodape {
+	margin-top: 1.0em;
+    text-align: center;
+	font-style: italic;
+}
